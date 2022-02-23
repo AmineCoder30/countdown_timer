@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Dancing+Script&family=Libre+Baskerville:wght@400;700&family=Lobster&family=Red+Hat+Text:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Text', sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #1e1f29;
+  position: relative;
+}
+
+.container .counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 70px;
+  background-image: url(../image/bg-stars.svg);
+}
+
+.container .counter .time {
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+}
+
+.container .counter .time > div:not(:last-child) {
+  margin-right: 20px;
+}
+
+.container .counter .time .name {
+  color: #8486a9;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.container .counter .time .time > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .counter h1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: white;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+}
+
+.icon {
+  background-image: url(../image/pattern-hills.svg);
+  width: 100%;
+  height: 170px;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 45px;
+}
+
+.icon i {
+  font-size: 20px;
+  position: relative;
+  color: #8486a9;
+  cursor: pointer;
+}
+
+.icon i:hover {
+  color: #fb6087;
+}
+
+.icon i:not(:last-child) {
+  margin-right: 15px;
+}
+
+.one {
+  position: relative;
+  -webkit-box-shadow: 0px 6px 4px 0px;
+          box-shadow: 0px 6px 4px 0px;
+}
+
+@media (max-width: 570px) {
+  .one {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (min-width: 571px) {
+  .one {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.one > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+.one .tow {
+  height: 100%;
+  width: 100%;
+  background-color: #1e1f29;
+  color: #fb6087;
+}
+
+@media (max-width: 570px) {
+  .one .tow {
+    font-size: 30px;
+    padding-top: 18px;
+  }
+}
+
+@media (min-width: 571px) {
+  .one .tow {
+    font-size: 65px;
+    padding-top: 25px;
+  }
+}
+
+.one .three {
+  height: 50%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0px 0 1px 0;
+          box-shadow: 0px 0 1px 0;
+}
+
+.one::after {
+  content: "";
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: -2px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: black;
+  z-index: 2000;
+}
+
+.one::before {
+  content: "";
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  right: -2px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: black;
+  z-index: 20000;
+}
+/*# sourceMappingURL=launch.css.map */

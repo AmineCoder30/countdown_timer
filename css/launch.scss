@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Dancing+Script&family=Libre+Baskerville:wght@400;700&family=Lobster&family=Red+Hat+Text:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Red Hat Text', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: hsl(235, 16%, 14%);
+    position: relative;
+   
+    .counter{
+   
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+       padding-top: 70px;
+        background-image: url(../image/bg-stars.svg);
+        .time{
+            height: 350px;
+            display: flex;
+            margin-top: 40px;
+            >div:not(:last-child){
+                margin-right: 20px;
+               
+            }
+            .name{
+                color: #8486a9;
+                text-align: center;
+                margin-top: 15px;
+                font-size: 14px;
+            }
+            .time>div{
+                display: flex;
+                flex-direction: column;
+               
+            }
+        }
+        h1{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            color: white;
+            text-transform: uppercase;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+.icon{
+       background-image: url(../image/pattern-hills.svg);
+       width: 100%;
+       height: 170px;
+       background-size: cover;
+       display: flex;
+       justify-content: center;
+       align-items: flex-end;
+       padding-bottom: 45px
+
+}
+.icon i{
+    font-size: 20px;
+    position: relative;
+    color: hsl(237, 18%, 59%);
+    cursor: pointer;
+}
+.icon i:hover{
+    color: hsl(345, 95%, 68%);
+}
+.icon i:not(:last-child){
+    margin-right: 15px;
+}
+.one{
+    position: relative;
+    box-shadow: 0px 6px 4px 0px;
+
+@media(max-width:570px){
+    width: 70px;
+    height: 70px;
+
+}
+@media(min-width:571px){
+    width: 120px;
+    height: 120px;
+
+}
+    >div{
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+       
+    }
+    .tow{
+        height: 100%;
+        width: 100%;
+        background-color: hsl(235, 16%, 14%);
+        color:  hsl(345, 95%, 68%);
+       
+        @media(max-width:570px){
+            font-size: 30px;
+            padding-top: 18px;
+        
+        }
+        @media(min-width:571px){
+            font-size: 65px;
+            padding-top: 25px;
+        
+        }
+       
+    }
+    .three{
+        height: 50%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.23);
+        box-shadow: 0px 0 1px 0;
+    }
+}
+.one::after{
+    content: "";
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: -2px;
+    transform: translateY(-50%);
+    background-color: black;
+    z-index: 2000;
+}
+.one::before{
+    content: "";
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    right: -2px;
+    transform: translateY(-50%);
+    background-color: black;
+    z-index: 20000;
+}
